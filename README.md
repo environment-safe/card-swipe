@@ -63,6 +63,11 @@ const swipe = await getStdInSwipe();
 
 ```html
     <card-swipe></card-swipe>
+    <script type="module">
+        document.addEventListener('swipe', (e)=>{
+            //e.detail contains the swipe metadata
+        });
+    </script>
 ```
 
 To use it without a build process, you'll need something like this in your `<head>`:
